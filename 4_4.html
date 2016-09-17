@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+/*a wrapper div to centrally align the contents i.e. the 3 divs within it*/
+#wrapper{
+    text-align:center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*elliptical gradient*/
+#grad1 {
+    text-align: center; /*for the text to be aligned centrally inside div*/
+    display:inline-block; /*for this div to be centrally aligned within wrapper*/
+    height: 200px;
+    width: 200px;
+    background: red; 
+    background: radial-gradient(ellipse 100px 200px at top,red , orange , yellow , green); /*x axis is less than y axis length*/
+    border-radius: 30px; /*rounded corner*/
+    margin: auto;
+    line-height: 200px; /*for text within div1 to be vertically middle aligned*/
+     box-shadow: 10px 10px 5px #888888;
+     margin: 20px 20px 20px 20px; /*for inter div spacing*/
+}
+
+/*circular gradient*/
+#grad2 {
+    text-align: center;
+    display:inline-block;
+    height: 200px;
+    width: 200px;
+    /*Centre of circle is 50% horizontal align and 0px from vertical top*/
+    background: -webkit-radial-gradient(50% 0px, circle, red, yellow, green); /* For Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(50% 0px,circle, red, yellow, green); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(50% 0px,circle, red, yellow, green); /* For Fx 3.6 to 15 */
+    background: radial-gradient(50% 0px, circle, red, yellow, green); /* Standard syntax (must be last) */
+     border-radius: 30px;
+     line-height: 200px;
+     margin: auto;
+      box-shadow: 10px 10px 5px #888888;
+   margin: 20px 20px 20px 20px;
+}
+
+/*linear gradient from left to right*/
+#grad {
+    text-align: center;
+    display:inline-block; height: 200px;
+    width: 200px;
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left, red ,  green); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, red,  green); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, red, green); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to right, red , green); /* Standard syntax */
+    line-height: 200px;
+     margin: auto;
+     border-radius: 40px;
+      box-shadow: 10px 10px 5px #888888;
+         margin: 20px 20px 20px 20px;
+}
+</style>
+</head>
+<body style=" text-align: center;">
+<div id="wrapper">
+
+<!--Linear gradient-->
+<div id="grad">Box</div>
+
+<!--Circular gradient-->
+<div id="grad2">Box</div>
+
+<!--elliptical gradient-->
+<div id="grad1">Box</div>
+
+
+</div>
+
+</body>
+</html>
